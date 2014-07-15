@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'user',
 		'password' => 'password',
-		'database' => 'database_name',
+		'database' => 'copa',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

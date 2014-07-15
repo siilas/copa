@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+html {
+	background-image: url(../img/background.jpg);
+	background-position: center center;
+	background-size: round auto;
+}
+
+body {
+	background: transparent !important;
+}
+
+.body-content {
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+.jumbotron {
+	background-color: white !important;
+	border-radius: 25px !important;
+}
