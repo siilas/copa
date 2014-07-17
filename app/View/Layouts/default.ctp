@@ -45,7 +45,14 @@ $cakeDescription = __d('cake_dev', 'FIFA World Cup - Figurinhas');
 	<body>
 		<div class="container body-content">
 			<div class="logo">
-				<h1>FIFA World Cup <div>Figurinhas</div></h1>
+				<?php echo $this->Html->image('logo.png'); ?>
+				
+				<div class="div-right">
+					<h1>
+						FIFA World Cup 
+						<div class="logo-spot">Figurinhas</div>
+					</h1>
+				</div>
 			</div>
 			<div class="jumbotron">
 	

@@ -7,8 +7,9 @@
 
 html {
 	background-image: url(../img/background.jpg);
-	background-position: center center;
+	background-position: center bottom;
 	background-size: round auto;
+	height: 100%;
 }
 
 body {
@@ -27,4 +28,20 @@ body {
 
 .logo {
 	font-family: 'Brazil';
+	width: 33% !important;
+	padding: 10px;
+}
+
+.logo h1 {
+	color: #00356a;
+}
+
+.div-right {
+	float: right;
+}
+
+.logo-spot {
+	font-size: 42px;
+	text-align: center;
+	color: green !important;
 }
