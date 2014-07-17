@@ -58,7 +58,7 @@ $cakeDescription = __d('cake_dev', 'FIFA World Cup - Figurinhas');
 	
 				<?php echo $this->Session->flash(); ?>
 	
-				<?php /*echo $this->fetch('content');*/ ?>
+				<?php echo $this->fetch('content'); ?>
 			
 			</div>
 			<div id="footer"></div>

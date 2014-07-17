@@ -7,9 +7,8 @@
 
 html {
 	background-image: url(../img/background.jpg);
-	background-position: center bottom;
+	background-position: center center;
 	background-size: round auto;
-	height: 100%;
 }
 
 body {
