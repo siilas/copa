@@ -44,8 +44,8 @@ $cakeDescription = __d('cake_dev', 'FIFA World Cup - Figurinhas');
 	</head>
 	<body>
 		<div class="container body-content">
-			<div id="header">
-				<h1><?php echo $cakeDescription; ?></h1>
+			<div class="logo">
+				<h1>FIFA World Cup <div>Figurinhas</div></h1>
 			</div>
 			<div class="jumbotron">
 	
