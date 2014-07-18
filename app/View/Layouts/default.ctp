@@ -29,14 +29,18 @@ $cakeDescription = __d('cake_dev', 'FIFA World Cup - Figurinhas');
 		<?php
 			echo $this->Html->meta('icon');
 	
+			echo $this->Html->css('jquery-ui');
+			echo $this->Html->css('jquery-ui.structure');
+			echo $this->Html->css('jquery-ui.theme');
 			echo $this->Html->css('bootstrap.min');
 			echo $this->Html->css('bootstrap-theme');
 			echo $this->Html->css('styles');
 			
 			echo $this->Html->script('jquery-1.11.1.min');
+			echo $this->Html->script('jquery-ui');
 			echo $this->Html->script('bootstrap.min');
 			echo $this->Html->script('functions');	
-	
+			
 			echo $this->fetch('meta');
 			echo $this->fetch('css');
 			echo $this->fetch('script');
