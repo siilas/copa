@@ -44,3 +44,59 @@ body {
 	text-align: center;
 	color: green !important;
 }
+
+.sidebar {
+	
+}
+
+.sidebar #search {
+	background-color: #fff;
+	background-image: url("../img/search.png");
+	background-position: right center;
+	border: 1px solid #f1f1f1;
+	background-repeat: no-repeat;
+	float: left;
+	padding: 10px 35px 12px 10px;
+    width: 95%;
+    color: #5e656d !important;
+    border-radius: 15px;
+}
+
+fieldset {
+	width: 100%;
+}
+
+.search-form {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.sidebar {
+    float: right;
+    max-width: 311px;
+    width: 31.2%;
+}
+
+.sidebar-list {
+	list-style: none outside none;
+}
+
+.widget {
+    margin-bottom: 27px;
+    overflow: hidden;
+}
+
+.index-context {
+    float: left;
+    margin-bottom: 10px;
+    width: 65.6%;
+}
+
+.index {
+	margin: 0px;
+	padding: 0px;
+	float: none;
+    min-height: 100px;
+    overflow: hidden;
+}
