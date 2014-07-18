@@ -3,10 +3,11 @@ $(document).ready(function() {
 	$("#search").autocomplete({
 		source: function(request, response) {
 			$.ajax({
-				url: "http://gd.geobytes.com/AutoCompleteCity",
+				type: "POST",
+				url: "/copa/usuario/buscarComAjax",
 				dataType: "jsonp",
 				data: {
-					q: request.term
+					nomeUsuario: request.term
 				},
 				success: function(data) {
 					response(data);
