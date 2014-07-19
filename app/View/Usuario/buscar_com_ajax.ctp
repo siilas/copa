@@ -1,5 +1,5 @@
 <?php
 
-	echo $nomeUsuario;
+	echo json_encode($usuarios);
 
 ?>

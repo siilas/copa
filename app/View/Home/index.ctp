@@ -2,19 +2,17 @@
 /**
  * Página inicial da aplicação
  *
- * @author silas
- *
  */
- ?>
+?>
  
- <div class="index">
-	 <div class="index-context">
+<div class="index">
+	<div class="index-context">
 	 	
-	 </div>
+	</div>
 	 
-	 <div class="sidebar">
+	<div class="sidebar">
 	 	<ul class="sidebar-list">
-		 	<li class="widget widget-sidebar">
+			<li class="widget widget-sidebar">
 			 	<form method="post" name="search-form" class="search-form">
 			 		<fieldset>
 			 			<input id="search" name="search" placeholder="Busca por usuários..." type="text" />
@@ -25,6 +23,6 @@
 		 	<li class="widget widget-sidebar">
 		 	
 		 	</li>
-	 	</ul>
-	 </div>
+		</ul>
+	</div>
  </div>

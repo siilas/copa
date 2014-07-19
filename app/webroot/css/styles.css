@@ -22,7 +22,7 @@ body {
 
 .jumbotron {
 	background-color: white !important;
-	border-radius: 25px !important;
+	border-radius: 15px !important;
 }
 
 .logo {
@@ -59,7 +59,7 @@ body {
 	padding: 10px 35px 12px 10px;
     width: 95%;
     color: #5e656d !important;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 fieldset {
@@ -103,4 +103,60 @@ fieldset {
 
 .ui-autocomplete-loading {
 	background: white url("../img/ui-anim_basic_16x16.gif") right center no-repeat !important;
+}
+
+.ui-autocomplete {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	display: none;
+	min-width: 160px;
+	_width: 160px;
+	padding: 4px 0;
+	margin: 2px 0 0 0;
+	list-style: none;
+	background-color: #ffffff;
+	border-color: #f1f1f1;
+	border-color: rgba(0, 0, 0, 0.2);
+	border-style: solid;
+	border-width: 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	*border-right-width: 1px;
+	*border-bottom-width: 1px;
+	color: #5e656d !important; 
+}
+
+.ui-menu-item > a.ui-corner-all { 
+	display: block;
+	padding: 3px 15px;
+	clear: both;
+	font-weight: normal;
+	line-height: 18px;
+	color: #555555;
+	white-space: nowrap
+}
+
+.ui-autocomplete .ui-state-hover, .ui-autocomplete .ui-state-active { 
+	color: #ffffff !importatn;
+	text-decoration: none;
+	background-color: #0088cc !important;
+	border-radius: 5px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	background-image: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.not-found {
+	height: 150px;
 }

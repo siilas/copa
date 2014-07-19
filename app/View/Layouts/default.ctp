@@ -18,6 +18,7 @@
 
 $cakeDescription = __d('cake_dev', 'FIFA World Cup - Figurinhas');
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>

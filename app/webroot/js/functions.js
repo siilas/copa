@@ -1,11 +1,13 @@
+var contexto = document.URL;
+
 $(document).ready(function() {
 	
 	$("#search").autocomplete({
 		source: function(request, response) {
 			$.ajax({
 				type: "POST",
-				url: "/copa/usuario/buscarComAjax",
-				dataType: "jsonp",
+				url: contexto + "usuario/buscarComAjax",
+				dataType: "json",
 				data: {
 					nomeUsuario: request.term
 				},
@@ -15,7 +17,7 @@ $(document).ready(function() {
 			});
 		},
 		select: function(event, ui) {
-			alert(this.value);
+			abrirPagina("usuario/view/" + ui.item.id);
 		},
 		minLength: 3,
 		open: function() {
@@ -27,3 +29,7 @@ $(document).ready(function() {
 	});
 	
 });
+
+function abrirPagina(url) {
+	window.location = contexto + url;
+}
