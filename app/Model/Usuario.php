@@ -18,8 +18,10 @@ class Usuario extends AppModel {
 	}
 	
 	public function buscarPorId($id) {
-		return $this->find("first", array(
-			"conditions" => array("Usuario.id" => $id)
-		));
+		if (is_int($id)) {
+			return $this->find("first", array(
+				"conditions" => array("Usuario.id" => $id)
+			));
+		}
 	}
 }

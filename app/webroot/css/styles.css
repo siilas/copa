@@ -57,7 +57,7 @@ body {
 	background-repeat: no-repeat;
 	float: left;
 	padding: 10px 35px 12px 10px;
-    width: 95%;
+    width: 97%;
     color: #5e656d !important;
     border-radius: 5px;
 }
@@ -80,6 +80,7 @@ fieldset {
 
 .sidebar-list {
 	list-style: none outside none;
+	padding: 0;
 }
 
 .widget {

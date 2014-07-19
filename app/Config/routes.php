@@ -22,7 +22,6 @@
 
 /**
  * Redirecionando a página inicial padrão para o controller 'home',
- * @author silas
  */
 	Router::connect('/', array('controller' => 'home', 'action' => 'index', 'Início'));
 /**
