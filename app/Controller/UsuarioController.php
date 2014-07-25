@@ -11,6 +11,28 @@ class UsuarioController extends AppController {
 	
 	public function view($id) {
 		$usuario = $this->Usuario->buscarPorId($id);
+		if ($usuario == null) {
+			$this->redirect("/");
+		}
 		$this->set("usuario", $usuario);
+	}
+	
+	public function login() {
+		$user = $this->request->data("user");
+		$password = $this->request->data("password");
+		$usuario = $this->Usuario->verificarUsuario($user, $password);
+		if ($usuario != null) {
+			$this->Session->write("userLogged", array(
+				"user" => $usuario["email"],
+				"password" => $usuario["password"]
+			));
+		} else {
+			$this->set("msgError", "Usuário e/ou senha inválidos");
+		}
+	}
+	
+	public function logout() {
+		$this->Session->delete("userLogged");
+		$this->redirect("/");
 	}
 }
